@@ -12,8 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.linux.createcompilador.theme.gris
+import com.linux.createcompilador.theme.primary
+import com.linux.createcompilador.views.IdiomaComposable
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 
@@ -23,57 +25,70 @@ fun Router() {
 
     val controlador = remember { Controller.state }
     val collectAsState by controlador.collectAsState(Dispatchers.IO)
-    val corrutina= rememberCoroutineScope()
+    val corrutina = rememberCoroutineScope()
     Box(modifier = Modifier.fillMaxHeight().fillMaxWidth()) {
 
         Column(modifier = Modifier.fillMaxWidth().align(Alignment.Center)) {
             when (collectAsState) {
                 is Navegacion.Idioma -> {
-                    Text("hola1")
+                    IdiomaComposable()
                 }
-                is Navegacion.Teclado->{
+
+                is Navegacion.Teclado -> {
                     Text("hola2     ")
                 }
-                is Navegacion.Cuenta->{
+
+                is Navegacion.Cuenta -> {
 
                 }
-                is Navegacion.ZonaHoraria->{
+
+                is Navegacion.ZonaHoraria -> {
 
                 }
-                is Navegacion.Instalacion->{
+
+                is Navegacion.Instalacion -> {
 
                 }
-                is Navegacion.Procedimiento->{
+
+                is Navegacion.Procedimiento -> {
 
                 }
-                is Navegacion.Personalizacion->{
+
+                is Navegacion.Personalizacion -> {
 
                 }
-                is Navegacion.Finalizar->{
+
+                is Navegacion.Finalizar -> {
 
                 }
             }
         }
 
         Row(
-            modifier = Modifier.fillMaxWidth().align(Alignment.BottomCenter),
+            modifier = Modifier.fillMaxWidth()
+                .align(Alignment.BottomCenter)
+                .padding(10.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Button({
                 corrutina.launch {
-                       Controller.pop()
-                   }
+                    Controller.pop()
+                }
             }, enabled = Navegacion.Idioma != collectAsState) {
                 Text("Anterior")
             }
-            Navegacion.listNavegacion().forEach {
-                Spacer(
-                    Modifier.align(Alignment.CenterVertically).size(10.dp).clip(CircleShape).background(
-                        if (collectAsState == it) Color.Blue else
-                            Color.Black
-                    )
-                )
+            Box (modifier =  Modifier.align(Alignment.CenterVertically)){
+                Row (   horizontalArrangement = Arrangement.SpaceBetween){
+                    Navegacion.listNavegacion().forEach {
+                        Spacer(
+                            Modifier.align(Alignment.CenterVertically).padding( horizontal = 5.dp).size(8.dp).clip(CircleShape).background(
+                                if (collectAsState == it) primary else
+                                    gris
+                            )
+                        )
 
+                    }
+                }
             }
             Button({
                 corrutina.launch {
@@ -81,7 +96,7 @@ fun Router() {
                         Controller.plus(it)
                     }
                 }
-            }, enabled = collectAsState.siguiente!=null) {
+            }, enabled = collectAsState.siguiente != null) {
                 Text("Siguiente")
             }
         }

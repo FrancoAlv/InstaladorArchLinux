@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.*
 import com.linux.createcompilador.router.Router
+import com.linux.createcompilador.theme.DragAndDropTheme
 import java.nio.file.Path
 import kotlin.io.path.exists
 import kotlin.io.path.inputStream
@@ -25,7 +26,10 @@ import kotlin.io.path.inputStream
 @Composable
 @Preview
 fun App() {
-    Router()
+    DragAndDropTheme{
+        Router()
+    }
+
 }
 
 fun main() {
