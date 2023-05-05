@@ -43,6 +43,7 @@ fun IdiomaComposable() {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text("Español", modifier = Modifier.align(Alignment.Bottom))
+
                     Icon(Icons.Outlined.Check, "")
                 }
             }

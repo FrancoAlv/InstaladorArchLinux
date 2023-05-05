@@ -12,24 +12,8 @@ data class IdiomaEntity(
 )
 
 
-data class IdiomaValue(
-    @field:SerializedName("key")
-    val key: String? = null,
-    @field:SerializedName("value")
-    val value: String? = null,
-)
 
 
-data class IdiomaTeclado(
-    @field:SerializedName("id")
-    val id: String? = null,
-    @field:SerializedName("titulo")
-    val titulo: String? = null,
-    @field:SerializedName("subtitulo")
-    val subtitulo: String? = null,
-    @field:SerializedName("comando")
-    val comando: String? = null,
-)
 
 
 

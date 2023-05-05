@@ -1,0 +1,587 @@
+[
+  {
+    "id": "us",
+    "titulo": "English (US)",
+    "subtitulo": "us",
+    "comando": "gkbd-keyboard-display -l us"
+  },
+  {
+    "id": "es",
+    "titulo": "Español",
+    "subtitulo": "es",
+    "comando": "gkbd-keyboard-display -l es"
+  },
+  {
+    "id": "latam",
+    "titulo": "Spanish (Latin American)",
+    "subtitulo": "latam",
+    "comando": "gkbd-keyboard-display -l latam"
+  },
+  {
+    "id": "af",
+    "titulo": "Dari",
+    "subtitulo": "af",
+    "comando": "gkbd-keyboard-display -l af"
+  },
+  {
+    "id": "ara",
+    "titulo": "Arabic",
+    "subtitulo": "ara",
+    "comando": "gkbd-keyboard-display -l ara"
+  },
+  {
+    "id": "al",
+    "titulo": "Albanian",
+    "subtitulo": "al",
+    "comando": "gkbd-keyboard-display -l al"
+  },
+  {
+    "id": "am",
+    "titulo": "Armenian",
+    "subtitulo": "am",
+    "comando": "gkbd-keyboard-display -l am"
+  },
+  {
+    "id": "at",
+    "titulo": "German (Austria)",
+    "subtitulo": "at",
+    "comando": "gkbd-keyboard-display -l at"
+  },
+  {
+    "id": "au",
+    "titulo": "English (Australian)",
+    "subtitulo": "au",
+    "comando": "gkbd-keyboard-display -l au"
+  },
+  {
+    "id": "az",
+    "titulo": "Azerbaijani",
+    "subtitulo": "az",
+    "comando": "gkbd-keyboard-display -l az"
+  },
+  {
+    "id": "by",
+    "titulo": "Belarusian",
+    "subtitulo": "by",
+    "comando": "gkbd-keyboard-display -l by"
+  },
+  {
+    "id": "be",
+    "titulo": "Belgian",
+    "subtitulo": "be",
+    "comando": "gkbd-keyboard-display -l be"
+  },
+  {
+    "id": "bd",
+    "titulo": "Bangla",
+    "subtitulo": "bd",
+    "comando": "gkbd-keyboard-display -l bd"
+  },
+  {
+    "id": "in",
+    "titulo": "Indian",
+    "subtitulo": "in",
+    "comando": "gkbd-keyboard-display -l in"
+  },
+  {
+    "id": "ba",
+    "titulo": "Bosnian",
+    "subtitulo": "ba",
+    "comando": "gkbd-keyboard-display -l ba"
+  },
+  {
+    "id": "br",
+    "titulo": "Portuguese (Brazil)",
+    "subtitulo": "br",
+    "comando": "gkbd-keyboard-display -l br"
+  },
+  {
+    "id": "bg",
+    "titulo": "Bulgarian",
+    "subtitulo": "bg",
+    "comando": "gkbd-keyboard-display -l bg"
+  },
+  {
+    "id": "dz",
+    "titulo": "Berber (Algeria, Latin)",
+    "subtitulo": "dz",
+    "comando": "gkbd-keyboard-display -l dz"
+  },
+  {
+    "id": "ma",
+    "titulo": "Arabic (Morocco)",
+    "subtitulo": "ma",
+    "comando": "gkbd-keyboard-display -l ma"
+  },
+  {
+    "id": "cm",
+    "titulo": "English (Cameroon)",
+    "subtitulo": "cm",
+    "comando": "gkbd-keyboard-display -l cm"
+  },
+  {
+    "id": "mm",
+    "titulo": "Burmese",
+    "subtitulo": "mm",
+    "comando": "gkbd-keyboard-display -l mm"
+  },
+  {
+    "id": "ca",
+    "titulo": "French (Canada)",
+    "subtitulo": "ca",
+    "comando": "gkbd-keyboard-display -l ca"
+  },
+  {
+    "id": "cd",
+    "titulo": "French (Democratic Republic of the Congo)",
+    "subtitulo": "cd",
+    "comando": "gkbd-keyboard-display -l cd"
+  },
+  {
+    "id": "cn",
+    "titulo": "Chinese",
+    "subtitulo": "cn",
+    "comando": "gkbd-keyboard-display -l cn"
+  },
+  {
+    "id": "hr",
+    "titulo": "Croatian",
+    "subtitulo": "hr",
+    "comando": "gkbd-keyboard-display -l hr"
+  },
+  {
+    "id": "cz",
+    "titulo": "Czech",
+    "subtitulo": "cz",
+    "comando": "gkbd-keyboard-display -l cz"
+  },
+  {
+    "id": "dk",
+    "titulo": "Danish",
+    "subtitulo": "dk",
+    "comando": "gkbd-keyboard-display -l dk"
+  },
+  {
+    "id": "nl",
+    "titulo": "Dutch",
+    "subtitulo": "nl",
+    "comando": "gkbd-keyboard-display -l nl"
+  },
+  {
+    "id": "bt",
+    "titulo": "Dzongkha",
+    "subtitulo": "bt",
+    "comando": "gkbd-keyboard-display -l bt"
+  },
+  {
+    "id": "ee",
+    "titulo": "Estonian",
+    "subtitulo": "ee",
+    "comando": "gkbd-keyboard-display -l ee"
+  },
+  {
+    "id": "ir",
+    "titulo": "Persian",
+    "subtitulo": "ir",
+    "comando": "gkbd-keyboard-display -l ir"
+  },
+  {
+    "id": "iq",
+    "titulo": "Iraqi",
+    "subtitulo": "iq",
+    "comando": "gkbd-keyboard-display -l iq"
+  },
+  {
+    "id": "fo",
+    "titulo": "Faroese",
+    "subtitulo": "fo",
+    "comando": "gkbd-keyboard-display -l fo"
+  },
+  {
+    "id": "fi",
+    "titulo": "Finnish",
+    "subtitulo": "fi",
+    "comando": "gkbd-keyboard-display -l fi"
+  },
+  {
+    "id": "fr",
+    "titulo": "French",
+    "subtitulo": "fr",
+    "comando": "gkbd-keyboard-display -l fr"
+  },
+  {
+    "id": "gh",
+    "titulo": "English (Ghana)",
+    "subtitulo": "gh",
+    "comando": "gkbd-keyboard-display -l gh"
+  },
+  {
+    "id": "gn",
+    "titulo": "N'Ko (AZERTY)",
+    "subtitulo": "gn",
+    "comando": "gkbd-keyboard-display -l gn"
+  },
+  {
+    "id": "ge",
+    "titulo": "Georgian",
+    "subtitulo": "ge",
+    "comando": "gkbd-keyboard-display -l ge"
+  },
+  {
+    "id": "de",
+    "titulo": "German",
+    "subtitulo": "de",
+    "comando": "gkbd-keyboard-display -l de"
+  },
+  {
+    "id": "gr",
+    "titulo": "Greek",
+    "subtitulo": "gr",
+    "comando": "gkbd-keyboard-display -l gr"
+  },
+  {
+    "id": "hu",
+    "titulo": "Hungarian",
+    "subtitulo": "hu",
+    "comando": "gkbd-keyboard-display -l hu"
+  },
+  {
+    "id": "is",
+    "titulo": "Icelandic",
+    "subtitulo": "is",
+    "comando": "gkbd-keyboard-display -l is"
+  },
+  {
+    "id": "il",
+    "titulo": "Hebrew",
+    "subtitulo": "il",
+    "comando": "gkbd-keyboard-display -l il"
+  },
+  {
+    "id": "it",
+    "titulo": "Italian",
+    "subtitulo": "it",
+    "comando": "gkbd-keyboard-display -l it"
+  },
+  {
+    "id": "jp",
+    "titulo": "Japanese",
+    "subtitulo": "jp",
+    "comando": "gkbd-keyboard-display -l jp"
+  },
+  {
+    "id": "kg",
+    "titulo": "Kyrgyz",
+    "subtitulo": "kg",
+    "comando": "gkbd-keyboard-display -l kg"
+  },
+  {
+    "id": "kh",
+    "titulo": "Khmer (Cambodia)",
+    "subtitulo": "kh",
+    "comando": "gkbd-keyboard-display -l kh"
+  },
+  {
+    "id": "kz",
+    "titulo": "Kazakh",
+    "subtitulo": "kz",
+    "comando": "gkbd-keyboard-display -l kz"
+  },
+  {
+    "id": "la",
+    "titulo": "Lao",
+    "subtitulo": "la",
+    "comando": "gkbd-keyboard-display -l la"
+  },
+  {
+    "id": "lt",
+    "titulo": "Lithuanian",
+    "subtitulo": "lt",
+    "comando": "gkbd-keyboard-display -l lt"
+  },
+  {
+    "id": "lv",
+    "titulo": "Latvian",
+    "subtitulo": "lv",
+    "comando": "gkbd-keyboard-display -l lv"
+  },
+  {
+    "id": "mao",
+    "titulo": "Maori",
+    "subtitulo": "mao",
+    "comando": "gkbd-keyboard-display -l mao"
+  },
+  {
+    "id": "me",
+    "titulo": "Montenegrin",
+    "subtitulo": "me",
+    "comando": "gkbd-keyboard-display -l me"
+  },
+  {
+    "id": "mk",
+    "titulo": "Macedonian",
+    "subtitulo": "mk",
+    "comando": "gkbd-keyboard-display -l mk"
+  },
+  {
+    "id": "mt",
+    "titulo": "Maltese",
+    "subtitulo": "mt",
+    "comando": "gkbd-keyboard-display -l mt"
+  },
+  {
+    "id": "mn",
+    "titulo": "Mongolian",
+    "subtitulo": "mn",
+    "comando": "gkbd-keyboard-display -l mn"
+  },
+  {
+    "id": "no",
+    "titulo": "Norwegian",
+    "subtitulo": "no",
+    "comando": "gkbd-keyboard-display -l no"
+  },
+  {
+    "id": "pl",
+    "titulo": "Polish",
+    "subtitulo": "pl",
+    "comando": "gkbd-keyboard-display -l pl"
+  },
+  {
+    "id": "pt",
+    "titulo": "Portuguese",
+    "subtitulo": "pt",
+    "comando": "gkbd-keyboard-display -l pt"
+  },
+  {
+    "id": "ro",
+    "titulo": "Romanian",
+    "subtitulo": "ro",
+    "comando": "gkbd-keyboard-display -l ro"
+  },
+  {
+    "id": "ru",
+    "titulo": "Russian",
+    "subtitulo": "ru",
+    "comando": "gkbd-keyboard-display -l ru"
+  },
+  {
+    "id": "rs",
+    "titulo": "Serbian",
+    "subtitulo": "rs",
+    "comando": "gkbd-keyboard-display -l rs"
+  },
+  {
+    "id": "si",
+    "titulo": "Slovenian",
+    "subtitulo": "si",
+    "comando": "gkbd-keyboard-display -l si"
+  },
+  {
+    "id": "sk",
+    "titulo": "Slovak",
+    "subtitulo": "sk",
+    "comando": "gkbd-keyboard-display -l sk"
+  },
+  {
+    "id": "se",
+    "titulo": "Swedish",
+    "subtitulo": "se",
+    "comando": "gkbd-keyboard-display -l se"
+  },
+  {
+    "id": "ch",
+    "titulo": "German (Switzerland)",
+    "subtitulo": "ch",
+    "comando": "gkbd-keyboard-display -l ch"
+  },
+  {
+    "id": "sy",
+    "titulo": "Arabic (Syria)",
+    "subtitulo": "sy",
+    "comando": "gkbd-keyboard-display -l sy"
+  },
+  {
+    "id": "tj",
+    "titulo": "Tajik",
+    "subtitulo": "tj",
+    "comando": "gkbd-keyboard-display -l tj"
+  },
+  {
+    "id": "lk",
+    "titulo": "Sinhala (phonetic)",
+    "subtitulo": "lk",
+    "comando": "gkbd-keyboard-display -l lk"
+  },
+  {
+    "id": "th",
+    "titulo": "Thai",
+    "subtitulo": "th",
+    "comando": "gkbd-keyboard-display -l th"
+  },
+  {
+    "id": "tr",
+    "titulo": "Turkish",
+    "subtitulo": "tr",
+    "comando": "gkbd-keyboard-display -l tr"
+  },
+  {
+    "id": "tw",
+    "titulo": "Taiwanese",
+    "subtitulo": "tw",
+    "comando": "gkbd-keyboard-display -l tw"
+  },
+  {
+    "id": "ua",
+    "titulo": "Ukrainian",
+    "subtitulo": "ua",
+    "comando": "gkbd-keyboard-display -l ua"
+  },
+  {
+    "id": "gb",
+    "titulo": "English (UK)",
+    "subtitulo": "gb",
+    "comando": "gkbd-keyboard-display -l gb"
+  },
+  {
+    "id": "uz",
+    "titulo": "Uzbek",
+    "subtitulo": "uz",
+    "comando": "gkbd-keyboard-display -l uz"
+  },
+  {
+    "id": "vn",
+    "titulo": "Vietnamese",
+    "subtitulo": "vn",
+    "comando": "gkbd-keyboard-display -l vn"
+  },
+  {
+    "id": "kr",
+    "titulo": "Korean",
+    "subtitulo": "kr",
+    "comando": "gkbd-keyboard-display -l kr"
+  },
+  {
+    "id": "ie",
+    "titulo": "Irish",
+    "subtitulo": "ie",
+    "comando": "gkbd-keyboard-display -l ie"
+  },
+  {
+    "id": "pk",
+    "titulo": "Urdu (Pakistan)",
+    "subtitulo": "pk",
+    "comando": "gkbd-keyboard-display -l pk"
+  },
+  {
+    "id": "mv",
+    "titulo": "Dhivehi",
+    "subtitulo": "mv",
+    "comando": "gkbd-keyboard-display -l mv"
+  },
+  {
+    "id": "za",
+    "titulo": "English (South Africa)",
+    "subtitulo": "za",
+    "comando": "gkbd-keyboard-display -l za"
+  },
+  {
+    "id": "epo",
+    "titulo": "Esperanto",
+    "subtitulo": "epo",
+    "comando": "gkbd-keyboard-display -l epo"
+  },
+  {
+    "id": "np",
+    "titulo": "Nepali",
+    "subtitulo": "np",
+    "comando": "gkbd-keyboard-display -l np"
+  },
+  {
+    "id": "ng",
+    "titulo": "English (Nigeria)",
+    "subtitulo": "ng",
+    "comando": "gkbd-keyboard-display -l ng"
+  },
+  {
+    "id": "et",
+    "titulo": "Amharic",
+    "subtitulo": "et",
+    "comando": "gkbd-keyboard-display -l et"
+  },
+  {
+    "id": "sn",
+    "titulo": "Wolof",
+    "subtitulo": "sn",
+    "comando": "gkbd-keyboard-display -l sn"
+  },
+  {
+    "id": "brai",
+    "titulo": "Braille",
+    "subtitulo": "brai",
+    "comando": "gkbd-keyboard-display -l brai"
+  },
+  {
+    "id": "tm",
+    "titulo": "Turkmen",
+    "subtitulo": "tm",
+    "comando": "gkbd-keyboard-display -l tm"
+  },
+  {
+    "id": "ml",
+    "titulo": "Bambara",
+    "subtitulo": "ml",
+    "comando": "gkbd-keyboard-display -l ml"
+  },
+  {
+    "id": "tz",
+    "titulo": "Swahili (Tanzania)",
+    "subtitulo": "tz",
+    "comando": "gkbd-keyboard-display -l tz"
+  },
+  {
+    "id": "tg",
+    "titulo": "French (Togo)",
+    "subtitulo": "tg",
+    "comando": "gkbd-keyboard-display -l tg"
+  },
+  {
+    "id": "ke",
+    "titulo": "Swahili (Kenya)",
+    "subtitulo": "ke",
+    "comando": "gkbd-keyboard-display -l ke"
+  },
+  {
+    "id": "bw",
+    "titulo": "Tswana",
+    "subtitulo": "bw",
+    "comando": "gkbd-keyboard-display -l bw"
+  },
+  {
+    "id": "ph",
+    "titulo": "Filipino",
+    "subtitulo": "ph",
+    "comando": "gkbd-keyboard-display -l ph"
+  },
+  {
+    "id": "md",
+    "titulo": "Moldavian",
+    "subtitulo": "md",
+    "comando": "gkbd-keyboard-display -l md"
+  },
+  {
+    "id": "id",
+    "titulo": "Indonesian (Latin)",
+    "subtitulo": "id",
+    "comando": "gkbd-keyboard-display -l id"
+  },
+  {
+    "id": "my",
+    "titulo": "Malay (Jawi, Arabic Keyboard)",
+    "subtitulo": "my",
+    "comando": "gkbd-keyboard-display -l my"
+  }
+]
+
+
+
