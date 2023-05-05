@@ -23,7 +23,9 @@ import java.nio.file.Paths
         storagePath = "${this.storageDirectory}\\$namedocument"
     )
 
-    val version = (System.getProperty("app.version") ?: "true") != "true"
+    //Como voy a crear archivos que no se van a encryptar y no veo necesario lo voy poner en false
+    // en caso sea neceserop debe validar un caso de dev o pro como estaba antes
+    val version = false
 
     protected fun getStoragePath(): String {
         val typeName = namedocument

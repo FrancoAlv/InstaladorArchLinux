@@ -10,11 +10,12 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.linux.createcompilador.theme.gris
 import com.linux.createcompilador.theme.primary
 import com.linux.createcompilador.views.IdiomaComposable
+import com.linux.createcompilador.views.Teclado
+import com.linux.createcompilador.views.ZonaHoraria
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -35,7 +36,7 @@ fun Router() {
                 }
 
                 is Navegacion.Teclado -> {
-                    Text("hola2     ")
+                    Teclado()
                 }
 
                 is Navegacion.Cuenta -> {
@@ -43,7 +44,7 @@ fun Router() {
                 }
 
                 is Navegacion.ZonaHoraria -> {
-
+                    ZonaHoraria()
                 }
 
                 is Navegacion.Instalacion -> {
@@ -77,11 +78,12 @@ fun Router() {
             }, enabled = Navegacion.Idioma != collectAsState) {
                 Text("Anterior")
             }
-            Box (modifier =  Modifier.align(Alignment.CenterVertically)){
-                Row (   horizontalArrangement = Arrangement.SpaceBetween){
+            Box(modifier = Modifier.align(Alignment.CenterVertically)) {
+                Row(horizontalArrangement = Arrangement.SpaceBetween) {
                     Navegacion.listNavegacion().forEach {
                         Spacer(
-                            Modifier.align(Alignment.CenterVertically).padding( horizontal = 5.dp).size(8.dp).clip(CircleShape).background(
+                            Modifier.align(Alignment.CenterVertically).padding(horizontal = 5.dp).size(8.dp)
+                                .clip(CircleShape).background(
                                 if (collectAsState == it) primary else
                                     gris
                             )
