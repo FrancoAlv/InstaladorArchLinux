@@ -13,9 +13,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import com.linux.createcompilador.theme.gris
 import com.linux.createcompilador.theme.primary
-import com.linux.createcompilador.views.IdiomaComposable
-import com.linux.createcompilador.views.Teclado
-import com.linux.createcompilador.views.ZonaHoraria
+import com.linux.createcompilador.hexagonal.idioma.infrastructure.view.IdiomaComposable
+import com.linux.createcompilador.hexagonal.teclado.infrastructure.view.Teclado
+import com.linux.createcompilador.hexagonal.zonaHoraria.infrastructure.view.ZonaHoraria
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

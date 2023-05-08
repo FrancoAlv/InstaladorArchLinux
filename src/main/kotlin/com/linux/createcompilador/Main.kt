@@ -17,6 +17,7 @@ import androidx.compose.ui.res.loadImageBitmap
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.*
+import com.linux.createcompilador.IOD.Context
 import com.linux.createcompilador.router.Router
 import com.linux.createcompilador.theme.DragAndDropTheme
 import java.nio.file.Path
@@ -35,7 +36,10 @@ fun App() {
 fun main() {
     val version = System.getProperty("app.version") ?: "Development"
     application {
-        Window(onCloseRequest = ::exitApplication, state = rememberWindowState(size = DpSize(900.dp,600.dp), position = WindowPosition.Aligned(
+        Window(onCloseRequest = {
+            Context.close()
+            exitApplication()
+        }, state = rememberWindowState(size = DpSize(900.dp,600.dp), position = WindowPosition.Aligned(
             Alignment.Center), isMinimized = false, placement = WindowPlacement.Floating), icon = appIcon, title = "Conveyor Compose for Desktop sample $version") {
             App()
         }

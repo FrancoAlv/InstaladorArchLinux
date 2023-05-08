@@ -2,7 +2,7 @@ package com.linux.createcompilador.IOD
 
 import androidx.compose.runtime.*
 import com.linux.createcompilador.ConfigManager
-import com.linux.createcompilador.base.ViewModelBase
+import com.linux.createcompilador.hexagonal.base.ViewModelBase
 import org.springframework.context.ConfigurableApplicationContext
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 

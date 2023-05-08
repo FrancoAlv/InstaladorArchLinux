@@ -1,0 +1,4 @@
+JAVA_VERSION="11.0.16"
+MODULES="java.base jdk.unsupported com.google.gson dev.hydraulic.conveyor.control hydraulic.conveyor.launcher java.annotation java.datatransfer java.xml java.prefs java.desktop java.instrument java.logging java.management java.security.sasl java.naming java.rmi java.scripting jdk.accessibility jdk.crypto.ec jdk.httpserver jdk.jfr kotlin.stdlib kotlin.stdlib.jdk7 kotlin.stdlib.jdk8 kotlinx.atomicfu"
+OS_ARCH=amd64
+OS_NAME=Linux
