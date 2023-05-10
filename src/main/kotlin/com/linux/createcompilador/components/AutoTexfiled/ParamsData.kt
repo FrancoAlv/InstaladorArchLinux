@@ -1,4 +1,4 @@
-package com.linux.createcompilador.components.AuotTexfiled
+package com.linux.createcompilador.components.AutoTexfiled
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier

@@ -1,5 +1,5 @@
 @file:Suppress("UNUSED_EXPRESSION")
-package com.linux.createcompilador.components.AuotTexfiled
+package com.linux.createcompilador.components.AutoTexfiled
 
 
 import androidx.compose.foundation.background
@@ -27,9 +27,9 @@ inline fun <reified T> AutoCompleteTextField(
     var expanded by remember { mutableStateOf(false) }
 
     val filteredItems = remember(params.items, searchText) {
-        params.items.filter {
+        params.items.asSequence().filter {
             return@filter params.atributo.get(it).toString().contains(searchText, ignoreCase = true)
-        }
+        }.toList()
     }
 
     Column(modifier = Modifier.then(params.modifier), horizontalAlignment = Alignment.Start) {
@@ -56,6 +56,7 @@ inline fun <reified T> AutoCompleteTextField(
                 params.trailingIcon()
             },
             textStyle = textStyle,
+            singleLine = true,
             colors = colors,
         )
         if (expanded && filteredItems.isNotEmpty()) {

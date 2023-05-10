@@ -9,7 +9,7 @@ import java.util.*
 
 
 object Controller {
-    private val _state = MutableStateFlow<Navegacion>(Navegacion.ZonaHoraria)
+    private val _state = MutableStateFlow<Navegacion>(Navegacion.Idioma)
     val state = _state.asStateFlow()
     private val stack = Stack<Navegacion>()
     private val _cambio = MutableSharedFlow<Boolean>()
@@ -18,7 +18,7 @@ object Controller {
 
 
     init {
-        stack.push(Navegacion.ZonaHoraria)
+        stack.push(Navegacion.Idioma)
     }
 
 

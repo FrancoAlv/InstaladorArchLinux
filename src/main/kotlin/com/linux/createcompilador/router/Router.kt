@@ -11,9 +11,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
+import com.linux.createcompilador.hexagonal.cuenta.infrastructure.view.Cuenta
+import com.linux.createcompilador.hexagonal.finalizar.infrastructure.view.Finalizar
 import com.linux.createcompilador.theme.gris
 import com.linux.createcompilador.theme.primary
 import com.linux.createcompilador.hexagonal.idioma.infrastructure.view.IdiomaComposable
+import com.linux.createcompilador.hexagonal.instalacion.infrastructure.view.Instalacion
+import com.linux.createcompilador.hexagonal.personalizacion.infrastructure.view.Personalizacion
+import com.linux.createcompilador.hexagonal.procedimiento.infrastructure.view.Procedimiento
 import com.linux.createcompilador.hexagonal.teclado.infrastructure.view.Teclado
 import com.linux.createcompilador.hexagonal.zonaHoraria.infrastructure.view.ZonaHoraria
 import kotlinx.coroutines.Dispatchers
@@ -40,7 +45,7 @@ fun Router() {
                 }
 
                 is Navegacion.Cuenta -> {
-
+                    Cuenta()
                 }
 
                 is Navegacion.ZonaHoraria -> {
@@ -48,19 +53,19 @@ fun Router() {
                 }
 
                 is Navegacion.Instalacion -> {
-
+                    Instalacion()
                 }
 
                 is Navegacion.Procedimiento -> {
-
+                    Procedimiento()
                 }
 
                 is Navegacion.Personalizacion -> {
-
+                    Personalizacion()
                 }
 
                 is Navegacion.Finalizar -> {
-
+                    Finalizar()
                 }
             }
         }
