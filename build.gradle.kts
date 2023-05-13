@@ -50,14 +50,6 @@ dependencies {
     // serializar objects
     implementation("com.google.code.gson:gson:2.9.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.3.0")
-
-    //zona hoaria
-    // https://mvnrepository.com/artifact/io.github.cquiroz/scala-java-time-tzdb
-    implementation("io.github.cquiroz:scala-java-time-tzdb_3:2.5.0")
-
-
-
 
 }
 

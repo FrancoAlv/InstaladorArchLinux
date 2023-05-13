@@ -9,12 +9,22 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.toSize
 import androidx.compose.ui.zIndex
 import com.linux.createcompilador.theme.POPPINS
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.withContext
+import kotlin.reflect.KProperty1
 
 
 @Composable
@@ -26,15 +36,22 @@ inline fun <reified T> AutoCompleteTextField(
     var searchText by remember { mutableStateOf("") }
     var expanded by remember { mutableStateOf(false) }
 
-    val filteredItems = remember(params.items, searchText) {
-        params.items.asSequence().filter {
-            return@filter params.atributo.get(it).toString().contains(searchText, ignoreCase = true)
-        }.toList()
+    var filteredItems by remember {
+        mutableStateOf(emptyList<T>())
+    }
+
+
+    LaunchedEffect(params.items, searchText) {
+        filtrarItems(params.items, searchText, params.atributo)
+            .collect { items ->
+                withContext(Dispatchers.IO) {
+                    filteredItems = items
+                }
+            }
     }
 
     Column(modifier = Modifier.then(params.modifier), horizontalAlignment = Alignment.Start) {
         val textFieldWidth = remember { mutableStateOf(0.dp) }
-
         OutlinedTextField(
             modifier = Modifier
                 .fillMaxWidth(1f)
@@ -62,12 +79,12 @@ inline fun <reified T> AutoCompleteTextField(
         if (expanded && filteredItems.isNotEmpty()) {
             Box(
                 modifier = Modifier
-                    .width(textFieldWidth.value)
+                    .width(with(LocalDensity.current){textFieldWidth.value})
                     .wrapContentHeight()
                     .zIndex(1f)
             ) {
                 Card(
-                    modifier = Modifier.width(textFieldWidth.value),
+                    modifier = Modifier.width(with(LocalDensity.current){textFieldWidth.value}),
                     shape = MaterialTheme.shapes.medium,
                     elevation = 8.dp
                 ) {
@@ -76,7 +93,7 @@ inline fun <reified T> AutoCompleteTextField(
                         { expanded = false },
                         focusable = false,
                         modifier = Modifier
-                            .width(textFieldWidth.value)
+                            .width(with(LocalDensity.current){textFieldWidth.value})
                             .heightIn(max = 200.dp)
                     ) {
                         filteredItems.forEach { item ->
@@ -108,3 +125,10 @@ inline fun <reified T> AutoCompleteTextField(
     }
 }
 
+
+
+inline fun <reified T> filtrarItems(items: List<T>, searchText: String, atributo: KProperty1<T,*>): Flow<List<T>> = flow {
+    emit(items.asSequence().filter {
+        return@filter atributo.get(it).toString().contains(searchText, ignoreCase = true)
+    }.toList())
+}.flowOn(Dispatchers.IO)
